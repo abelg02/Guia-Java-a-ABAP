@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- Portada del repositorio (1280×640). Se genera con: node docs/portada.mjs -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    width: 1280px; height: 640px; overflow: hidden; position: relative;
+    background: radial-gradient(800px 500px at 85% 30%, rgba(69, 230, 168, .14), transparent 60%), #0B0C0F;
+    color: #fff; font-family: 'Archivo', system-ui, sans-serif;
+  }
+  .left { position: absolute; left: 72px; top: 0; bottom: 0; width: 560px; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+  .tag { font: 700 14px/1 'JetBrains Mono', monospace; letter-spacing: .12em; text-transform: uppercase; color: #45E6A8; }
+  h1 { font-size: 66px; line-height: .98; font-weight: 800; font-stretch: 75%; letter-spacing: -.01em; }
+  h1 .java { color: #FF6A2B; }
+  h1 .abap { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: #45E6A8; font-stretch: 100%; }
+  p { font-size: 21px; line-height: 1.4; color: #c3c7cf; max-width: 500px; }
+  ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; max-width: 540px; }
+  li { font: 500 14px/1 'JetBrains Mono', monospace; padding: 9px 12px; border-radius: 999px; border: 1px solid #2A2E36; color: #e3e6ea; }
+  .url { font: 500 15px/1 'JetBrains Mono', monospace; color: #8E939D; }
+  .shot {
+    position: absolute; left: 660px; top: 70px; width: 720px; height: 500px; border-radius: 12px; overflow: hidden;
+    border: 1px solid #2A2E36; box-shadow: 0 40px 90px -20px rgba(0,0,0,.8);
+    transform: perspective(1600px) rotateY(-8deg) rotateX(2deg); transform-origin: left center;
+    background: #0B0C0F url('captura-traduccion.png') no-repeat; background-size: 1180px auto; background-position: -560px -95px;
+  }
+</style>
+</head>
+<body>
+  <div class="left">
+    <div class="tag">Transporta · Guía de campo gratuita</div>
+    <h1>De <span class="java">Java</span><br>a <span class="abap">ABAP</span></h1>
+    <p>Para programadores Java que llegan a SAP: equivalencias, errores típicos con su solución y snippets listos para copiar.</p>
+    <ul>
+      <li>12 equivalencias</li>
+      <li>8 errores resueltos</li>
+      <li>8 snippets</li>
+      <li>20 transacciones</li>
+      <li>Test de nivel</li>
+    </ul>
+    <div class="url">abelg02.github.io/Guia-Java-a-ABAP</div>
+  </div>
+  <div class="shot"></div>
+</body>
+</html>
